@@ -1,0 +1,274 @@
+// Function to load CSV and render content (e.g., for Academy, Blog, or FAQ pages)
+function loadCSV(url, callback) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            const rows = data.split('\n').slice(1); // Skip header
+            const items = rows.map(row => {
+                const cols = row.split(',');
+                return {
+                    name: cols[0],
+                    price: cols[1],
+                    duration: cols[2],
+                    shortDesc: cols[3],
+                    pageLink: cols[4]
+                };
+            });
+            callback(items);
+        });
+}
+
+
+// Tab functionality for "What Do We Do" and Portfolio sections
+function showTab(tabName) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-btn');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabName).classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Slider functionality for testimonials
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    if (slides.length > 0) {
+        const totalSlides = slides.length;
+        currentSlide = (index + totalSlides) % totalSlides;
+        document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Load content on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Load programs on academy.html
+    if (document.getElementById('programs-container')) {
+        loadCSV('assets/data/programs.csv', (programs) => {
+            const container = document.getElementById('programs-container');
+            programs.forEach(program => {
+                const card = document.createElement('div');
+                card.className = 'program-card';
+                card.innerHTML = `
+                    <h3>${program.name}</h3>
+                    <p>${program.shortDesc}</p>
+                    <p>Duration: ${program.duration}</p>
+                    <p>Price: ₦${program.price}</p>
+                    <a href="${program.pageLink}" class="btn btn-primary">View Details</a>
+                `;
+                container.appendChild(card);
+            });
+        });
+    }
+    // Load blog on blog.html (redirects to Medium)
+    if (document.getElementById('blog-container')) {
+        loadCSV('assets/data/blog.csv', (posts) => {
+            const container = document.getElementById('blog-container');
+            posts.forEach(post => {
+                const card = document.createElement('div');
+                card.className = 'blog-card';
+                card.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}">
+                    <h3>${post.title}</h3>
+                    <p>${post.excerpt}</p>
+                    <a href="${post.link}" class="btn btn-primary">Read on Medium</a>
+                `;
+                container.appendChild(card);
+            });
+        });
+    }
+
+    // Initialize slider on homepage
+    if (document.querySelector('.slider')) {
+        showSlide(0);
+    }
+});
+
+// Function to load consultation solutions CSV and render cards (up to 6)
+function loadSolutions(url, callback) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            const rows = data.split('\n').slice(1); // Skip header
+            const solutions = rows.map(row => {
+                const cols = row.split(',');
+                return {
+                    title: cols[0],
+                    description: cols[1],
+                    results: cols[2],
+                    whatWeDid: cols[3],
+                    rating: parseInt(cols[4]),
+                    pdfLink: cols[5]
+                };
+            }).slice(0, 6); // Limit to 6 items
+            callback(solutions);
+        });
+}
+
+// Load solutions on consultation.html
+document.addEventListener('DOMContentLoaded', () => {
+    // Existing code...
+    if (document.getElementById('solutions-container')) {
+        loadSolutions('assets/data/consultation-solutions.csv', (solutions) => {
+            const container = document.getElementById('solutions-container');
+            solutions.forEach(solution => {
+                const stars = '★'.repeat(solution.rating) + '☆'.repeat(5 - solution.rating);
+                const card = document.createElement('div');
+                card.className = 'solution-card';
+                card.innerHTML = `
+                    <h3>${solution.title}</h3>
+                    <p><strong>Description:</strong> ${solution.description}</p>
+                    <p><strong>Results:</strong> ${solution.results}</p>
+                    <p><strong>What We Did:</strong> ${solution.whatWeDid}</p>
+                    <div class="rating">${stars}</div>
+                    <a href="${solution.pdfLink}" class="btn btn-primary" download>Read Report</a>
+                `;
+                container.appendChild(card);
+            });
+        });
+    }
+    // Existing code...
+});
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    }
+    // Close menu on link click
+    mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            mobileMenu.classList.remove('open');
+        }
+    });
+    // Existing code...
+});
+
+// Student counter animation on academy page
+document.addEventListener('DOMContentLoaded', () => {
+    const counter = document.getElementById('student-counter');
+    if (counter) {
+        let count = 0;
+        const target = 500; // Change to your target number
+        const increment = target / 100;
+        const timer = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(timer);
+            }
+            counter.textContent = Math.floor(count);
+        }, 50);
+    }
+    // Existing code...
+});
+
+// FAQ Accordion Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        
+        question.addEventListener('click', () => {
+            // Close other open items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                answer.style.maxHeight = null;
+            }
+        });
+    });
+});
+
+// Program Page Accordion Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
+        
+        header.addEventListener('click', () => {
+            // Close other open items
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+            if (item.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
+    });
+});
+
+// Tools Tabs Functionality
+function showToolsTab(category) {
+    const buttons = document.querySelectorAll('.tools-tabs .tab-btn');
+    const cards = document.querySelectorAll('.tool-card');
+    
+    // Update active button
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Filter cards
+    cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+// Skills Tabs Functionality
+function showSkillsTab(category) {
+    const buttons = document.querySelectorAll('.skills-tabs .tab-btn');
+    const tiles = document.querySelectorAll('.skill-tile');
+    
+    // Update active button
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Filter tiles
+    tiles.forEach(tile => {
+        if (category === 'all' || tile.dataset.category === category) {
+            tile.classList.remove('hidden');
+        } else {
+            tile.classList.add('hidden');
+        }
+    });
+}

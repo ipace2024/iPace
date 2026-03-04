@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLDIP – Machine Learning & Data Intelligence Program | iPace Data Academy</title>
+    <meta name="description" content="MLDIP is a 4-month structured Machine Learning & Data Intelligence Program by iPace Data Academy designed for aspiring data scientists and ML engineers.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/images/logo.jpg" alt="iPace Concepts Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="../academy.html">Academy</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rdap.html">RDAP</a></li>
+                        <li><a href="adap.html">ADAP</a></li>
+                        <li><a href="mldip.html">MLDIP</a></li>
+                    </ul>
+                </li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="#" onclick="window.open('https://medium.com/@ipace2024', '_blank')">Blog</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="[Google Form Link for Application]" class="btn btn-primary">Apply Now</a>
+                <a href="../assets/brochure/mldip.pdf" class="btn btn-secondary" download>Download Brochure</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Machine Learning & Data Intelligence Program (MLDIP)</h1>
+                <p>2026 Pilot Cohort | 4-Month Structured Program</p>
+                <p>Train in data-driven problem solving, machine learning workflows, and intelligent system development.</p>
+                <div class="hero-buttons">
+                    <a href="[Google Form Link for Application]" class="btn btn-primary">Apply Now</a>
+                    <a href="../assets/brochure/mldip.pdf" class="btn btn-secondary" download>Download Brochure</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/images/mldip-header.jpg" alt="MLDIP Program" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Who is this Program For? -->
+        <section class="program-section">
+            <div class="container">
+                <h2>Who is this Program For?</h2>
+                <div class="program-tiles">
+                    <div class="program-tile">
+                        <img src="../assets/images/aspiring_scientists.jpg" alt="Aspiring Data Scientists" class="tile-icon">
+                        <h3>Aspiring Data Scientists</h3>
+                        <p>Starting their ML journey</p>
+                    </div>
+                    <div class="program-tile">
+                        <img src="../assets/images/machl.jpg" alt="ML Engineers" class="tile-icon">
+                        <h3>ML Engineers</h3>
+                        <p>Entry–mid level professionals</p>
+                    </div>
+                    <div class="program-tile">
+                        <img src="../assets/images/advanced_analysts.jpg" alt="Analysts" class="tile-icon">
+                        <h3>Analysts</h3>
+                        <p>Transitioning into ML roles</p>
+                    </div>
+                    <div class="program-tile">
+                        <img src="../assets/images/researchers.jpg" alt="Researchers" class="tile-icon">
+                        <h3>Researchers</h3>
+                        <p>Technical researchers and innovators</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools You Will Learn -->
+        <section class="program-section tools-learn">
+            <div class="container">
+                <h2>Tools You Will Learn</h2>
+                <div class="tools-tabs">
+                    <button class="tab-btn active" onclick="showToolsTab('all')">All Tools</button>
+                    <button class="tab-btn" onclick="showToolsTab('programming')">Programming</button>
+                    <button class="tab-btn" onclick="showToolsTab('analysis')">Analysis</button>
+                    <button class="tab-btn" onclick="showToolsTab('visualization')">Visualization</button>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card" data-category="programming">
+                        <div class="tool-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Programming for data and ML</p>
+                    </div>
+                    <div class="tool-card" data-category="analysis">
+                        <div class="tool-icon">📊</div>
+                        <h3>NumPy</h3>
+                        <p>Numerical computing and arrays</p>
+                    </div>
+                    <div class="tool-card" data-category="analysis">
+                        <div class="tool-icon">📈</div>
+                        <h3>Pandas</h3>
+                        <p>Data manipulation and analysis</p>
+                    </div>
+                    <div class="tool-card" data-category="visualization">
+                        <div class="tool-icon">📊</div>
+                        <h3>Matplotlib</h3>
+                        <p>Data visualization and plotting</p>
+                    </div>
+                    <div class="tool-card" data-category="programming">
+                        <div class="tool-icon">🤖</div>
+                        <h3>Scikit-learn</h3>
+                        <p>Machine learning algorithms</p>
+                    </div>
+                    <div class="tool-card" data-category="visualization">
+                        <div class="tool-icon">🔧</div>
+                        <h3>Streamlit</h3>
+                        <p>ML app deployment and UI</p>
+                    </div>
+                    <div class="tool-card" data-category="analysis">
+                        <div class="tool-icon">📦</div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control and collaboration</p>
+                    </div>
+                    <div class="tool-card" data-category="analysis">
+                        <div class="tool-icon">📚</div>
+                        <h3>Statistics</h3>
+                        <p>Statistical reasoning for ML</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Will Learn -->
+        <section class="program-section">
+            <div class="container">
+                <h2>What You Will Learn</h2>
+                <div class="skills-tabs">
+                    <button class="tab-btn active" onclick="showSkillsTab('all')">All Skills</button>
+                    <button class="tab-btn" onclick="showSkillsTab('technical')">Technical</button>
+                    <button class="tab-btn" onclick="showSkillsTab('analytical')">Analytical</button>
+                    <button class="tab-btn" onclick="showSkillsTab('communication')">Communication</button>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-tile" data-category="technical">
+                        <h3>Python Programming</h3>
+                        <p>Write code for data analysis and ML</p>
+                    </div>
+                    <div class="skill-tile" data-category="technical">
+                        <h3>ML Models</h3>
+                        <p>Build, evaluate, and interpret models</p>
+                    </div>
+                    <div class="skill-tile" data-category="analytical">
+                        <h3>EDA</h3>
+                        <p>Perform exploratory data analysis</p>
+                    </div>
+                    <div class="skill-tile" data-category="analytical">
+                        <h3>Statistics</h3>
+                        <p>Apply statistics to ML problems</p>
+                    </div>
+                    <div class="skill-tile" data-category="communication">
+                        <h3>Deployment</h3>
+                        <p>Deploy basic ML applications</p>
+                    </div>
+                    <div class="skill-tile" data-category="communication">
+                        <h3>Communication</h3>
+                        <p>Communicate ML results clearly</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Structure -->
+        <section class="program-section">
+            <div class="container">
+                <h2>Program Structure</h2>
+                <div class="program-tiles">
+                    <div class="program-tile">
+                        <h3>Duration</h3>
+                        <p>4 Months (Teaching Phase)</p>
+                    </div>
+                    <div class="program-tile">
+                        <h3>Mode</h3>
+                        <p>Live Virtual Sessions</p>
+                    </div>
+                    <div class="program-tile">
+                        <h3>Projects</h3>
+                        <p>Mentored Capstone Project</p>
+                    </div>
+                    <div class="program-tile">
+                        <h3>Certification</h3>
+                        <p>iPace Data Academy Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Descriptions (Accordion) -->
+        <section class="program-section">
+            <div class="container">
+                <h2>Course Descriptions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>A. Python Fundamentals</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Core Foundation / Short Modular</span>
+                            <span class="duration-badge">4 Weeks (Month 1)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Python basics and syntax</li>
+                                <li>Data types and variables</li>
+                                <li>Control flow (if-else, loops)</li>
+                                <li>Functions and modules</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>B. Statistics for Machine Learning</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Core Theory / Short Modular</span>
+                            <span class="duration-badge">4 Weeks (Month 1)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Probability theory and distributions</li>
+                                <li>Statistical estimation and inference</li>
+                                <li>Statistical thinking for ML</li>
+                                <li>Hypothesis testing basics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>C. Introduction to Python Data Libraries</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Core Skill / Short Modular</span>
+                            <span class="duration-badge">2 Weeks (Month 2)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>NumPy for numerical operations</li>
+                                <li>Pandas for data handling</li>
+                                <li>Data structures and manipulation</li>
+                                <li>Basic data operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>D. Exploratory Data Analysis (EDA)</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Core Skill</span>
+                            <span class="duration-badge">4 Weeks (Month 2–3)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Data cleaning and preprocessing</li>
+                                <li>Data visualization techniques</li>
+                                <li>Feature understanding and selection</li>
+                                <li>Insight generation from data</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>E. Git & GitHub for Data Projects</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Short Modular</span>
+                            <span class="duration-badge">3 Weeks (Month 2)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Version control fundamentals</li>
+                                <li>Git commands and workflows</li>
+                                <li>GitHub repository management</li>
+                                <li>Collaboration and project management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>F. Machine Learning Concepts & Workflow</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Advanced Tool</span>
+                            <span class="duration-badge">4 Weeks (Month 3–4)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Supervised learning algorithms</li>
+                                <li>Unsupervised learning techniques</li>
+                                <li>Model evaluation and metrics</li>
+                                <li>ML pipelines and best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>G. ML Model Deployment (Streamlit)</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Advanced Tool</span>
+                            <span class="duration-badge">4 Weeks (Month 4)</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Model packaging and serialization</li>
+                                <li>Deployment strategies</li>
+                                <li>Interactive ML apps with Streamlit</li>
+                                <li>Application testing and debugging</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>H. Cross-Program Seminars</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <span class="category-badge">Seminars</span>
+                            <span class="duration-badge">Invited Professionals</span>
+                            <p><strong>Topics Covered:</strong></p>
+                            <ul>
+                                <li>Responsible Use of AI (1 Day)</li>
+                                <li>Digital & Data Thinking (1 Day)</li>
+                                <li>Data Visualization & Interpretation (2 Days)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Certification Section (2 Columns) -->
+        <section class="program-section certification">
+            <div class="container">
+                <h2>Certification</h2>
+                <div class="certification-layout">
+                    <div class="certification-image">
+                        <img src="../assets/images/certificate_temp.jpg" alt="iPace Certificate Template" class="certificate-img">
+                        <p class="cert-caption">Official iPace Data Academy Certificate Template</p>
+                    </div>
+                    <div class="certification-info">
+                        <div class="cert-item">
+                            <div class="cert-icon">📜</div>
+                            <h3>Official Certificate</h3>
+                            <p>Recognized by iPace Data Academy and iPace Concepts</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon">✅</div>
+                            <h3>Verified Competence</h3>
+                            <p>Capstone project defense required for certification</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon">🌍</div>
+                            <h3>Global Recognition</h3>
+                            <p>Comparable to top global certifications in data analytics</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon">🎓</div>
+                            <h3>University Model</h3>
+                            <p>Rigorous academic standards with mentorship support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Tuition Section -->
+        <section class="program-section">
+            <div class="container">
+                <h2>Tuition</h2>
+                <div class="program-tiles">
+                    <div class="program-tile">
+                        <h3>Fee</h3>
+                        <p>₦150,000</p>
+                    </div>
+                    <div class="program-tile">
+                        <h3>Options</h3>
+                        <p>Installment plans available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Head of Program Quote -->
+        <section class="program-section head-quote">
+            <div class="container">
+                <h2>Words from the Head of Program</h2>
+                <div class="quote-content">
+                    <img src="../assets/images/gemini.jpg" alt="Head of Program" class="head-img">
+                    <blockquote>"MLDIP transforms learners into elite data practitioners through rigorous academic workflows and applied research integration."</blockquote>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Head of Program & Instructors -->
+        <section class="program-section">
+            <div class="container">
+                <h2>Instructors</h2>
+                <div class="instructors-grid">
+                    <div class="instructor-card">
+                        <img src="../assets/images/image4.jpg" alt="Python Instructor" class="instructor-img">
+                        <h3>Python & ML Instructors</h3>
+                        <p>Python Programming and ML Experts</p>
+                    </div>
+
+                    <div class="instructor-card">
+                        <img src="../assets/images/image5.jpg" alt="Data Scientist" class="instructor-img">
+                        <h3>Data Science Practitioners</h3>
+                        <p>Industry Data Science Experts</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="../assets/images/image4.jpg" alt="AI Ethics Expert" class="instructor-img">
+                        <h3>AI Ethics Experts</h3>
+                        <p>Research and AI Ethics Specialists</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="../assets/images/image5.jpg" alt="Industry Professional" class="instructor-img">
+                        <h3>Industry Professionals</h3>
+                        <p>Invited Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Register Now Section -->
+        <section class="program-section register-now">
+            <div class="container">
+                <div class="register-layout">
+                    <div class="register-content">
+                        <h2>Ready to Start Your Journey?</h2>
+                        <p class="register-intro">
+                            Join the 2026 Pilot Cohort and transform your career with iPace Data Academy's structured, university-model education. 
+                            Limited seats available for this exclusive program.
+                        </p>
+                        <div class="register-features">
+                            <div class="register-feature">
+                                <div class="feature-icon">📅</div>
+                                <h4>Program Starts</h4>
+                                <p>January 2026</p>
+                            </div>
+                            <div class="register-feature">
+                                <div class="feature-icon">📍</div>
+                                <h4>Delivery Mode</h4>
+                                <p>100% Virtual (Live Sessions)</p>
+                            </div>
+                            <div class="register-feature">
+                                <div class="feature-icon">🎓</div>
+                                <h4>Certificate</h4>
+                                <p>Official iPace Data Academy Certificate</p>
+                            </div>
+                            <div class="register-feature">
+                                <div class="feature-icon">💬</div>
+                                <h4>Support</h4>
+                                <p>24/7 Mentorship & Technical Support</p>
+                            </div>
+                        </div>
+                        <div class="register-cta">
+                            <a href="[Google Form Link for Application]" class="btn btn-primary btn-large">Apply Now</a>
+                            <a href="../assets/brochure/rdap.pdf" class="btn btn-secondary btn-large" download>Download Brochure</a>
+                        </div>
+                        <p class="register-note">Questions? Contact us at <a href="mailto:ipace2024@gmail.com">ipace2024@gmail.com</a> or WhatsApp +2348111986185</p>
+                    </div>
+                    <div class="register-image">
+                        <img src="../assets/images/data_academy.jpg" alt="Student Success" class="register-img">  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>iPace Concepts</h3>
+                    <p>Statistical Intelligence for Business Growth & Structured Data Education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../academy.html">Academy</a></li>
+                        <li><a href="../team.html">Team</a></li>
+                        <li><a href="../consultation.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: ipace2024@gmail.com</p>
+                    <p>Phone: +2348111986185</p>
+                    <p>Location: Nigeria</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/company/ipace24">LinkedIn</a></li>
+                        <li><a href="https://x.com/ipace2024">Twitter</a></li>
+                        <li><a href="https://medium.com/@ipace2024">Medium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iPace Concepts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
