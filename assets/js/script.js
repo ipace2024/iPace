@@ -272,3 +272,23 @@ function showSkillsTab(category) {
         }
     });
 }
+
+// Case Studies Tabs Functionality
+function showCaseStudyTab(category) {
+    // Update active button
+    const buttons = document.querySelectorAll('.case-studies-tabs .tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Hide ALL case study grids
+    const allGrids = document.querySelectorAll('.case-studies-grid');
+    allGrids.forEach(grid => {
+        grid.classList.add('hidden');
+    });
+    
+    // Show ONLY the selected grid
+    const selectedGrid = document.getElementById(category);
+    if (selectedGrid) {
+        selectedGrid.classList.remove('hidden');
+    }
+}

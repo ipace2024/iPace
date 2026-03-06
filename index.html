@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>iPace Concepts | Data Intelligence & Analytics Consulting in Nigeria</title>
     <meta name="description" content="iPace Concepts provides business data intelligence systems, data audit services, statistical consulting, and structured data academy programs in Nigeria.">
-    <meta name="keywords" content="data consulting Nigeria, business intelligence systems, statistical consulting, data academy Nigeria, retail analytics">
+    <meta name="keywords" content="data consulting Nigeria, business intelligence systems, statistical consulting, data academy Nigeria, retail analytics, ipace concepts, research assistant, model development company, data analyst in Nigeria, ipace concepts, ipace, iPace Consulting Services">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -171,38 +171,138 @@
 </section>
 
 <!-- Case Studies Section -->
-<section class="section case-studies">
+<section class="section case-studies-section">
     <div class="container">
         <h2>Case Studies</h2>
-        <div class="case-studies-grid">
-            <div class="case-study-tile">
-                <img src="assets/images/retail_forecasting.jpg" alt="HR" class="case-img">
-                <p class="case-date">March 06, 2026</p>
-                <h3>HR & People Analytics</h3>
-                <p>Detect employment frauds and improve workforce planning.</p>
-                <div class="case-actions">
-                    <span class="ongoing-badge">Ongoing</span>
-                    <a href="#" class="btn btn-primary" download>Read Report</a>
+        <p class="section-intro">
+            Explore our proven track record of delivering data-driven solutions and research excellence.
+        </p>
+        
+        <!-- Case Studies Tabs -->
+        <div class="case-studies-tabs">
+            <button class="tab-btn active" onclick="showCaseStudyTab('data-intelligence')">
+                Data Intelligence Case Studies
+            </button>
+            <button class="tab-btn" onclick="showCaseStudyTab('research')">
+                Research Case Studies
+            </button>
+        </div>
+        
+        <!-- Data Intelligence Case Studies (3 in a row with Read Report) -->
+        <div class="case-studies-grid" id="data-intelligence">
+            <!-- Case Study 1 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="assets/images/data_audit_service.jpg" alt="Data Intelligence Case Study 1" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>HR & People Analytics</h3>
+                    <p class="case-study-desc">
+                        Detect employment frauds and improve workforce planning
+                    </p>
+                    <a href="#" class="read-report-btn">Read Report →</a>
                 </div>
             </div>
-            <div class="case-study-tile">
-                <img src="assets/images/retail_intel_service.jpg" alt="retail" class="case-img">
-                <p class="case-date">February 06, 2026</p>
-                <h3>Retail Sale Analytics</h3>
-                <p>Forecast weekend demand of a retail store.</p>
-                <div class="case-actions">
-                    <span class="ongoing-badge">Ongoing</span>
-                    <a href="#" class="btn btn-primary" download>Read Report</a>
+            
+            <!-- Case Study 2 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="assets/images/retail_forecasting.jpg" alt="Data Intelligence Case Study 2" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Retail Sale Analytics</h3>
+                    <p class="case-study-desc">
+                        Forecast weekend demand of a retail store using the existing dataset thereby increasing products stock during the weekend based on the forecast.
+                    </p>
+                    <a href="#" class="read-report-btn">Read Report →</a>
                 </div>
             </div>
-            <div class="case-study-tile">
-                <img src="assets/images/agric.jpg" alt="Agriculture Case Study" class="case-img">
-                <p class="case-date">March 06, 2026</p>
-                <h3>Agricultural Yield</h3>
-                <p>Increasing crop yield by 15% through data insights.</p>
-                <div class="case-actions">
-                    <span class="ongoing-badge">Ongoing</span>
-                    <a href="#" class="btn btn-primary" download>Read Report</a>
+            
+            <!-- Case Study 3 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="assets/images/agric.jpg" alt="Data Intelligence Case Study 3" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Agricultural Yield</h3>
+                    <p class="case-study-desc">
+                        Increasing crop yield by 15% through data insights.
+                    </p>
+                    <a href="#" class="read-report-btn">Read Report →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Research Case Studies (2x2 grid with methodology) -->
+        <div class="case-studies-grid hidden" id="research">
+            <!-- Case Study 1 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="assets/images/economic_research.jpg" alt="Research Case Study 1" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Macroeconomic Impacts on Economic Growth</h3>
+                    <p class="case-study-desc">
+                        Conducted a study on the impact of some macroeconomic variables- Food Price Index, Exchange Rate, and Food Import Share- on economic growth which are measured by GDP, and Inflation Rate.
+                    <div class="case-study-methodology">
+                        <span class="methodology-badge">🔬 Multivariate Analysis</span>
+                        <span class="methodology-badge">📊 Correlation</span>
+                        <span class="methodology-badge">📈 Statistical Analysis</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 2 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="assets/images/solar_research.jpg" alt="Research Case Study 2" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Detecting rare solar flares using anomaly detection</h3>
+                    <p class="case-study-desc">
+                        Solar flares have classes such as A,B,C,M, and X-class. However, there is severe class imbalance due to the rarity of the X-class which is considered strong and very dangerous. An anomaly detection was used to identify this class and the model gave a TSS score of 0.69.
+                    </p>
+                    <div class="case-study-methodology">
+                        <span class="methodology-badge">🔬 Machine Learning</span>
+                        <span class="methodology-badge">📊 Anomaly Detection</span>
+                        <span class="methodology-badge">📈 Severe Imbalance</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 3 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="https://source.unsplash.com/400x300/?market,research" alt="Research Case Study 3" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Market Research & Consumer Behavior</h3>
+                    <p class="case-study-desc">
+                        Performed comprehensive market analysis for new product launch, identifying key consumer segments and purchase drivers.
+                    </p>
+                    <div class="case-study-methodology">
+                        <span class="methodology-badge">🔬 Market Research</span>
+                        <span class="methodology-badge">📊 Consumer Insights</span>
+                        <span class="methodology-badge">📈 Behavioral Analysis</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 4 -->
+            <div class="case-study-card">
+                <div class="case-study-image">
+                    <img src="https://source.unsplash.com/400x300/?social,science" alt="Research Case Study 4" class="case-study-img">
+                </div>
+                <div class="case-study-content">
+                    <h3>Social Science Research Project</h3>
+                    <p class="case-study-desc">
+                        Investigated social determinants of health using quantitative and qualitative methods, contributing to public health policy development.
+                    </p>
+                    <div class="case-study-methodology">
+                        <span class="methodology-badge">🔬 Social Research</span>
+                        <span class="methodology-badge">📊 Qualitative Analysis</span>
+                        <span class="methodology-badge">📈 Policy Impact</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,7 +365,7 @@
                         <img src="assets/images/insight3.jpg" alt="Machine Learning" class="card-img">
                         <h3>Machine Learning in Business</h3>
                         <p>How ML is revolutionizing decision-making for enterprises.</p>
-                        <a href="https://medium.com/ipace" class="btn btn-primary">Read More</a>
+                        <a href="https://medium.com/@ipace2024" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
