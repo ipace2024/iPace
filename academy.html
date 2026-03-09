@@ -2,268 +2,1214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>iPace Data Academy | Structured Analytics & Machine Learning Programs in Nigeria</title>
-    <meta name="description" content="Join iPace Data Academy for structured programs in research analytics, advanced data analytics, and machine learning in Nigeria.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo.jpg" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iPace Data Academy offers industry-focused training in Applied Data Analysis, Research Data Analysis, and Machine Learning & Data Intelligence.">
+    <meta name="keywords" content="Data Analysis Training, Machine Learning Training, Research Data Analysis, Data Literacy Programs, Data Science Training Nigeria">
+    <meta name="author" content="iPace Concepts">
+    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph (For Social Media) -->
-    <meta property="og:title" content="Page Name | iPace Concepts">
-    <meta property="og:description" content="iPace Concepts - Data Intelligence & Research Services">
-    <meta property="og:image" content="https://ipaceconcepts.com.ng/assets/images/og-image.jpg">
-    <meta property="og:url" content="https://ipaceconcepts.com.ng">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Page Name | iPace Concepts">
-    <meta name="twitter:description" content="iPace Concepts - Data Intelligence & Research Services">
-    <meta name="twitter:image" content="https://ipaceconcepts.com.ng/assets/images/twitter-image.jpg">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPH3Y8C8YK"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZPH3Y8C8YK');
-    </script>
-
+    <meta property="og:url" content="https://ipaceconcepts.com.ng/academy">
+    <meta property="og:title" content="iPace Data Academy | Professional Training in Data Analysis">
+    <meta property="og:description" content="iPace Data Academy offers industry-focused training in Applied Data Analysis, Research Data Analysis, and Machine Learning & Data Intelligence.">
+    <meta property="og:image" content="https://ipaceconcepts.com.ng/assets/images/academy-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Title -->
+    <title>iPace Data Academy | Professional Training in Data Analysis, Research Analytics & Machine Learning</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/academy.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-logo">
-                <a href="index.html"><img src="assets/images/logo.jpg" alt="iPace Concepts Logo" class="logo"></a>
+
+    <!-- Header Section -->
+<!-- ========================================
+   HEADER & NAVIGATION SECTION
+   ======================================== -->
+
+<!-- Top Header Row (Logo + CTA + Hamburger) -->
+<header class="header-top">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo Area -->
+            <div class="header-logo">
+                <a href="/">
+                    <img src="assets/images/logo.jpg" alt="iPace Concepts" class="logo-img">
+                    <span class="logo-text">iPace <span class="accent"> Data Academy</span></span>
+                </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="academy.html">Academy</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="programs/rdap.html">RDAP</a></li>
-                        <li><a href="programs/adap.html">ADAP</a></li>
-                        <li><a href="programs/mldip.html">MLDIP</a></li>
-                    </ul>
-                </li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="#" onclick="window.open('https://medium.com/@ipace2024', '_blank')">Blog</a></li>
-            </ul>
-            <div class="hamburger">☰</div>
-            <div class="mobile-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="academy.html">Academy</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="#" onclick="window.open('https://medium.com/@ipace2024', '_blank')">Blog</a></li>
-                    <li><a href="consultation.html">Consultation</a></li>
-                </ul>
+            
+            <!-- CTA Button (Next to Logo) -->
+            <div class="header-cta">
+                <a href="#apply" class="btn btn-primary btn-sm">
+                    <i class="fas fa-user-plus"></i>
+                    Enroll Today
+                </a>
             </div>
-            <div class="nav-cta">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRmwGr8bwD1uKpdexrLr5AoOZWzB4sRZLyf7e7OcVv6pCF0A/viewform?usp=sharing&ouid=111703942489237670761" class="btn btn-primary">Apply Now</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="timer-ribbon">
-            <div class="timer-content">
-                <p>Application is closing soon, Don't miss this cohort!</p>
+            
+            <!-- Hamburger Menu (Mobile Only) -->
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
             </div>
         </div>
-        <section class="hero academy-hero">
-            <div class="hero-content">
-                <h1>iPace Data Academy – Structured. Rigorous. Career-Focused.</h1>
-                <p>The iPace Data Academy operates on a university-model framework, delivering live classes, mentorship, structured curriculum pathways, and applied case-based learning across analytics and machine learning.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRmwGr8bwD1uKpdexrLr5AoOZWzB4sRZLyf7e7OcVv6pCF0A/viewform?usp=sharing&ouid=111703942489237670761" class="btn btn-primary">Apply Now</a>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/academy_header.jpg" alt="Data Academy" class="hero-img">
-            </div>
-        </section>
-        <section class="section our-model">
-            <div class="container">
-                <h2>Our Model</h2>
-                <div class="model-box">
-                    <div class="model-grid">
-                        <div class="model-item">
-                            <img src="assets/images/live_classes.jpg" alt="Live Classes" class="model-img">
-                            <h3>Live Classes</h3>
-                            <p>Interactive sessions with expert instructors.</p>
-                        </div>
-                        <div class="model-item">
-                            <img src="assets/images/mentorship.jpg" alt="Mentorship" class="model-img">
-                            <h3>Mentorship</h3>
-                            <p>One-on-one guidance from industry professionals.</p>
-                        </div>
-                        <div class="model-item">
-                            <img src="assets/images/applied_projects.jpg" alt="Applied Projects" class="model-img">
-                            <h3>Applied Projects</h3>
-                            <p>Real-world case studies and hands-on learning.</p>
-                        </div>
-                        <div class="model-item">
-                            <img src="assets/images/cohort.jpg" alt="Cohort-Based" class="model-img">
-                            <h3>Cohort-Based</h3>
-                            <p>Learn with peers in structured groups.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
+</header>
 
-        <section class="section tools-learn">
-            <div class="container">
-                <h2>Tools You Learn</h2>
-                <div class="tools-grid">
-                    <div class="tool-tile">Excel</div>
-                    <div class="tool-tile">PowerBI</div>
-                    <div class="tool-tile">Tableau</div>
-                    <div class="tool-tile">Statistical Theories</div>
-                    <div class="tool-tile">Data Visualizations</div>
-                    <div class="tool-tile">SPSS</div>
-                    <div class="tool-tile">Python</div>
-                    <div class="tool-tile">R Programming</div>
-                </div>
-            </div>
-        </section>
+<!-- Menu Bar (Below Header, Centered) -->
+<nav class="menu-bar" id="menuBar">
+    <div class="container">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#hero" class="menu-link active">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item menu-dropdown">
+                <a href="#programs" class="menu-link">
+                    <i class="fas fa-book-open"></i>
+                    Programs
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/programs/adap">
+                            <i class="fas fa-chart-line"></i>
+                            ADAP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/programs/rdap">
+                            <i class="fas fa-microscope"></i>
+                            RDAP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/programs/mldip">
+                            <i class="fas fa-brain"></i>
+                            MLDIP
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="menu-item">
+                <a href="#approach" class="menu-link">
+                    <i class="fas fa-lightbulb"></i>
+                    Learning Approach
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="#tools" class="menu-link">
+                    <i class="fas fa-tools"></i>
+                    Tools
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="#apply" class="menu-link">
+                    <i class="fas fa-rocket"></i>
+                    Apply Now
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <section class="section the-numbers">
-            <div class="container">
-                <h2>The Numbers</h2>
-                <div class="numbers-grid">
-                    <div class="number-box">
-                        <h3>3</h3>
-                        <p>Programs</p>
-                    </div>
-                    <div class="number-box">
-                        <h3>10</h3>
-                        <p>Top Instructors</p>
-                    </div>
-                    <div class="number-box">
-                        <h3>15</h3>
-                        <p>Courses</p>
-                    </div>
-                    <div class="number-box">
-                        <h3 id="student-counter">0</h3>
-                        <p>Students</p>
-                    </div>
-                    <div class="certified-box">
-                        <h3>95%</h3>
-                        <p>Certified</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section our-programs">
-            <div class="container">
-                <h2>Our Programs</h2>
-                <div class="solutions-grid programs-grid">
-                    <div class="solution-card">
-                        <img src="assets/images/research.jpg" alt="RDAP" class="card-img">
-                        <h3>RDAP – Research & Data Analytics Program</h3>
-                        <p>Foundation in research & analytics</p>
-                        <p>Duration: 4 Months</p>
-                        <p>Tuition: ₦100,000</p>
-                        <a href="programs/rdap.html" class="btn btn-primary">View Details</a>
-                    </div>
-                    <div class="solution-card">
-                        <img src="assets/images/adap.jpg" alt="ADAP" class="card-img">
-                        <h3>ADAP – Advanced Data Analytics Program</h3>
-                        <p>Business intelligence & advanced analytics</p>
-                        <p>Duration: 4 Months</p>
-                        <p>Tuition: ₦120,000.</p>
-                        <a href="programs/adap.html" class="btn btn-primary">View Details</a>
-                    </div>
-                    <div class="solution-card">
-                        <img src="assets/images/machl.jpg" alt="MLDIP" class="card-img">
-                        <h3>MLDIP – Machine Learning & Data Intelligence Program</h3>
-                        <p>Applied ML & predictive modeling</p>
-                        <p>Duration: 4 Months</p>
-                        <p>Tuition: ₦150,000.</p>
-                        <a href="programs/mldip.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Notification Bar (Continuous Sliding Alert) -->
+<div class="notification-bar" id="notificationBar">
+    <div class="container">
+        <div class="notification-content">
+            <span class="notification-text">
+                <i class="fas fa-bullhorn"></i>
+                Next Cohort begins on April 25, 2026. 
+                <a href="#apply" class="notification-link">Register Now!</a>
+            </span>
+        </div>
+        <button class="notification-close" onclick="closeNotification()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
 
-        <section class="section what-you-gain">
-            <div class="container">
-                <h2>What You Gain</h2>
-                <div class="gain-tiles">
-                    <div class="gain-tile">
-                        <h3>Certifications</h3>
-                        <p>Industry-recognized certificates upon completion.</p>
-                    </div>
-                    <div class="gain-tile">
-                        <h3>Mentorship Post Graduation</h3>
-                        <p>Ongoing guidance from experts after the program.</p>
-                    </div>
-                    <div class="gain-tile">
-                        <h3>Exclusive Access to Community Competitions</h3>
-                        <p>Join exclusive challenges and networking events.</p>
-                    </div>
-                    <div class="gain-tile">
-                        <h3>Portfolio Development</h3>
-                        <p>Build a professional portfolio with real projects.</p>
-                    </div>
-                    <div class="gain-tile">
-                        <h3>Work-Ready Professional</h3>
-                        <p>Gain skills to become job-ready in data analytics.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section competitions-banner">
-            <div class="container">
-                <h2>Academy Competitions</h2>
-                <p>iPace Academy hosts analytical competitions and case challenges to strengthen applied learning and industry readiness.</p>
-                <a href="[Google Form Link for Competition]" class="btn btn-primary">Register Now</a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="menu-close">
+        <button onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <ul class="menu-list">
+        <li class="menu-item">
+            <a href="#hero" class="menu-link active">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+        </li>
+        
+        <li class="menu-item menu-dropdown">
+            <a href="#programs" class="menu-link">
+                <i class="fas fa-book-open"></i>
+                Programs
+                <i class="fas fa-chevron-down arrow-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="/programs/adap">
+                        <i class="fas fa-chart-line"></i>
+                        ADAP
+                    </a>
+                </li>
+                <li>
+                    <a href="p/rograms/rdap">
+                        <i class="fas fa-microscope"></i>
+                        RDAP
+                    </a>
+                </li>
+                <li>
+                    <a href="/programs/mldip">
+                        <i class="fas fa-brain"></i>
+                        MLDIP
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="menu-item">
+            <a href="#approach" class="menu-link">
+                <i class="fas fa-lightbulb"></i>
+                Learning Approach
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="#tools" class="menu-link">
+                <i class="fas fa-tools"></i>
+                Tools
+            </a>
+        </li>
+        
+        <li class="menu-item">
+            <a href="#apply" class="menu-link">
+                <i class="fas fa-rocket"></i>
+                Apply Now
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>iPace Concepts</h3>
-                    <p>Statistical Intelligence for Business Growth & Structured Data Education.</p>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span>Professional Data Training</span>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="academy.html">Academy</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="consultation.html">Consultation</a></li>
-                    </ul>
+                
+                <h1 class="hero-title">
+                    Build Real Data Skills That Power <span class="gradient-text">Modern Decisions</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Master applied data analysis, research analytics, and machine learning through practical programs designed for professionals, students, and organizations.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#programs" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-right"></i>
+                        Explore Our Programs
+                    </a>
+                    <a href="#apply" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-user-plus"></i>
+                        Apply to a Program
+                    </a>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Email: ipace2024@gmail.com</p>
-                    <p>WhatsApp: +2348111986185</p>
-                    <p>Location: Nigeria</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <ul class="social-links">
-                        <li><a href="https://www.linkedin.com/company/ipace24">LinkedIn</a></li>
-                        <li><a href="https://x.com/ipace2024">Twitter</a></li>
-                        <li><a href="https://medium.com/@ipace2024">Medium</a></li>
-                    </ul>
+                
+                <p class="hero-supporting">
+                    The iPace Data Academy is designed to bridge the gap between theoretical knowledge and real-world data applications. Our programs emphasize practical skills, analytical thinking, and industry-relevant tools.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Graduates</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Programs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="95">0</span>
+                        <span class="stat-label">Success Rate %</span>
+                    </div>
                 </div>
             </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="assets/images/academy_header.jpg" alt="Data Analytics Learning" class="hero-img">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            <span class="card-title">Data Analysis</span>
+                            <span class="card-value">95% Completion</span>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card floating-card-2">
+                        <div class="floating-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            <span class="card-title">Machine Learning</span>
+                            <span class="card-value">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-content">
+                <div class="video-badge">
+                    <span class="badge-icon"><i class="fas fa-play-circle"></i></span>
+                    <span>Watch Our Story</span>
+                </div>
+                
+                <h2 class="video-title">
+                    Discover the <span class="gradient-text">iPace Data Academy</span> Experience
+                </h2>
+                
+                <p class="video-subtitle">
+                    See how our programs transform professionals into data experts through hands-on learning and real-world projects.
+                </p>
+                
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-overlay">
+                                <p>Watch Video</p>
+                                <span>2:34</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-features">
+                    <div class="video-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert-led sessions</span>
+                    </div>
+                    <div class="video-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real-world projects</span>
+                    </div>
+                    <div class="video-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certificate of completion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Credibility Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <h2 class="trust-title">
+                    A Learning Platform Built for <span class="gradient-text">Real Impact</span>
+                </h2>
+                
+                <p class="trust-subtitle">
+                    Our programs are designed around practical applications of data. Participants learn how to analyze datasets, interpret results, and develop solutions that influence real-world decisions.
+                </p>
+                
+                <div class="trust-highlights">
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Practical Learning</h3>
+                        <p>Hands-on approach with real datasets</p>
+                    </div>
+                    
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Industry Tools</h3>
+                        <p>Learn tools used by top companies</p>
+                    </div>
+                    
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Structured Pathways</h3>
+                        <p>Clear learning progression</p>
+                    </div>
+                    
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Expert-Led</h3>
+                        <p>Learn from PhD holders & industry experts</p>
+                    </div>
+                    
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Real Datasets</h3>
+                        <p>Work with authentic data</p>
+                    </div>
+                    
+                    <div class="trust-highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification</h3>
+                        <p>Recognized completion certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Programs Section -->
+    <section class="programs-section" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-book-open"></i></span>
+                    <span>Our Programs</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Explore Our <span class="gradient-text">Programs</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    Choose the program that fits your career goals and learning needs
+                </p>
+            </div>
+            
+            <div class="programs-grid">
+                <!-- ADAP -->
+                <div class="program-card" data-program="adap">
+                    <div class="program-badge">
+                        <span class="badge-text">Popular</span>
+                    </div>
+                    
+                    <div class="program-image">
+                        <img src="assets/images/adap-header.jpg" alt="Applied Data Analysis Program" class="program-img">
+                        <div class="program-overlay">
+                            <a href="/programs/adap" class="program-link">
+                                <i class="fas fa-arrow-right"></i>
+                                View Program
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="program-content">
+                        <h3 class="program-title">
+                            Applied Data Analysis <span class="program-acronym">Program (ADAP)</span>
+                        </h3>
+                        
+                        <p class="program-description">
+                            Learn how to transform raw data into meaningful insights using modern analytical tools and statistical techniques.
+                        </p>
+                        
+                        <div class="program-skills">
+                            <h4>Key Skills</h4>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-check"></i> Data cleaning and preparation</li>
+                                <li><i class="fas fa-check"></i> Exploratory data analysis</li>
+                                <li><i class="fas fa-check"></i> Data visualization</li>
+                                <li><i class="fas fa-check"></i> Statistical inference</li>
+                                <li><i class="fas fa-check"></i> Data-driven reporting</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="program-target">
+                            <h4>Best For</h4>
+                            <div class="target-list">
+                                <span>Professionals</span>
+                                <span>Analysts</span>
+                                <span>Business managers</span>
+                                <span>Beginners</span>
+                            </div>
+                        </div>
+                        
+                        <a href="/programs/adap" class="program-cta">
+                            View Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- RDAP -->
+                <div class="program-card" data-program="rdap">
+                    <div class="program-badge">
+                        <span class="badge-text">Research</span>
+                    </div>
+                    
+                    <div class="program-image">
+                        <img src="assets/images/research.jpg" alt="Research Data Analysis Program" class="program-img">
+                        <div class="program-overlay">
+                            <a href="/programs/rdap" class="program-link">
+                                <i class="fas fa-arrow-right"></i>
+                                View Program
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="program-content">
+                        <h3 class="program-title">
+                            Research Data Analysis <span class="program-acronym">Program (RDAP)</span>
+                        </h3>
+                        
+                        <p class="program-description">
+                            Develop advanced skills for analyzing research datasets and producing rigorous statistical interpretations.
+                        </p>
+                        
+                        <div class="program-skills">
+                            <h4>Key Skills</h4>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-check"></i> Quantitative research methods</li>
+                                <li><i class="fas fa-check"></i> Statistical modeling</li>
+                                <li><i class="fas fa-check"></i> Survey data analysis</li>
+                                <li><i class="fas fa-check"></i> Hypothesis testing</li>
+                                <li><i class="fas fa-check"></i> Research data interpretation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="program-target">
+                            <h4>Best For</h4>
+                            <div class="target-list">
+                                <span>Researchers</span>
+                                <span>Graduate students</span>
+                                <span>Policy analysts</span>
+                                <span>Academics</span>
+                            </div>
+                        </div>
+                        
+                        <a href="/programs/rdap" class="program-cta">
+                            View Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- MLDIP -->
+                <div class="program-card" data-program="mldip">
+                    <div class="program-badge">
+                        <span class="badge-text">Advanced</span>
+                    </div>
+                    
+                    <div class="program-image">
+                        <img src="assets/images/mldip-header.jpg" alt="Machine Learning & Data Intelligence Program" class="program-img">
+                        <div class="program-overlay">
+                            <a href="/programs/mldip" class="program-link">
+                                <i class="fas fa-arrow-right"></i>
+                                View Program
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="program-content">
+                        <h3 class="program-title">
+                            Machine Learning & Data Intelligence <span class="program-acronym">Program (MLDIP)</span>
+                        </h3>
+                        
+                        <p class="program-description">
+                            Learn how to design predictive models and build intelligent systems that support automated decision-making.
+                        </p>
+                        
+                        <div class="program-skills">
+                            <h4>Key Skills</h4>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-check"></i> Machine learning fundamentals</li>
+                                <li><i class="fas fa-check"></i> Predictive modeling</li>
+                                <li><i class="fas fa-check"></i> Anomaly detection</li>
+                                <li><i class="fas fa-check"></i> Feature engineering</li>
+                                <li><i class="fas fa-check"></i> Data intelligence systems</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="program-target">
+                            <h4>Best For</h4>
+                            <div class="target-list">
+                                <span>Data professionals</span>
+                                <span>Engineers</span>
+                                <span>Advanced analysts</span>
+                                <span>AI enthusiasts</span>
+                            </div>
+                        </div>
+                        
+                        <a href="/programs/mldip" class="program-cta">
+                            View Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Approach Section -->
+    <section class="approach-section" id="approach">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-lightbulb"></i></span>
+                    <span>Learning Methodology</span>
+                </div>
+                
+                <h2 class="section-title">
+                    How You Will <span class="gradient-text">Learn</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    The iPace Data Academy adopts a structured learning approach that combines theoretical understanding with practical application.
+                </p>
+            </div>
+            
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Interactive Lectures</h3>
+                    <p>Concepts are introduced through guided sessions and interactive discussions with industry experts.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-on Analysis</h3>
+                    <p>Participants work directly with real datasets to build analytical confidence and practical skills.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Case Studies</h3>
+                    <p>Real-world scenarios demonstrate how data analysis informs strategic decisions across industries.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Capstone Projects</h3>
+                    <p>Participants complete applied projects to demonstrate their understanding and build portfolio pieces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Technologies Section -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-tools"></i></span>
+                    <span>Technology Stack</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Tools You Will <span class="gradient-text">Work With</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    Students gain practical experience using industry tools such as Python, SQL, Excel, and more.
+                </p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <p>Data analysis and machine learning</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>SQL</h4>
+                    <p>Database management and queries</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h4>Excel</h4>
+                    <p>Advanced analytics and visualization</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Tableau</h4>
+                    <p>Business intelligence dashboards</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>TensorFlow</h4>
+                    <p>Machine learning frameworks</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>R</h4>
+                    <p>Statistical analysis and modeling</p>
+                </div>
+            </div>
+            
+            <div class="tools-note">
+                <p><i class="fas fa-info-circle"></i> Understanding tools is important, but understanding <strong>how to think with data</strong> is what truly matters. Our programs emphasize analytical reasoning and structured problem solving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Apply Section -->
+    <section class="audience-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-users"></i></span>
+                    <span>Target Audience</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Who Our Programs Are <span class="gradient-text">Designed For</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    These programs are suitable for professionals at all stages of their data journey.
+                </p>
+            </div>
+            
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Students</h4>
+                    <p>Preparing for careers in data and analytics</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h4>Researchers</h4>
+                    <p>Working with quantitative datasets</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Professionals</h4>
+                    <p>Seeking analytical decision-making skills</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Entrepreneurs</h4>
+                    <p>Interested in data-driven strategies</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4>Organizations</h4>
+                    <p>Building internal data capabilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why iPace Section -->
+    <section class="why-ipace-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-star"></i></span>
+                    <span>Why Choose Us</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Why Learn with <span class="gradient-text">iPace</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    We're not just teaching tools—we're building data literacy and analytical thinking.
+                </p>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Focused Expertise</h3>
+                    <p>Our academy specializes in data literacy, analytics, and intelligence systems.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Practical Orientation</h3>
+                    <p>Learning is centered around solving real analytical problems.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Structured Curriculum</h3>
+                    <p>Programs are carefully designed to build skills progressively.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional Relevance</h3>
+                    <p>Skills directly applicable in business, research, and policy environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Pathways Section -->
+    <section class="pathways-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon"><i class="fas fa-road"></i></span>
+                    <span>Career Growth</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Where These Skills Can <span class="gradient-text">Take You</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    Graduates of our programs develop competencies that support diverse career paths.
+                </p>
+            </div>
+            
+            <div class="pathways-grid">
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Data Analytics</h4>
+                    <p>Business insights and reporting</p>
+                </div>
+                
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Business Intelligence</h4>
+                    <p>Dashboard and visualization</p>
+                </div>
+                
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h4>Research Analytics</h4>
+                    <p>Academic and market research</p>
+                </div>
+                
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Data Science</h4>
+                    <p>Advanced modeling and ML</p>
+                </div>
+                
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>ML Engineering</h4>
+                    <p>Predictive systems and automation</p>
+                </div>
+                
+                <div class="pathway-card">
+                    <div class="pathway-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h4>Policy Analysis</h4>
+                    <p>Data-driven public policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+    JOIN COMMUNITY SECTION (ALIGNED)
+    ======================================== -->
+
+    <section class="community-section" id="community">
+        <div class="container">
+            <div class="community-content">
+                <!-- Left Column: Join Community -->
+                <div class="community-left">
+                    <div class="community-badge">
+                        <span class="badge-icon"><i class="fab fa-whatsapp"></i></span>
+                        <span>Join Our Community</span>
+                    </div>
+                    
+                    <h2 class="community-title">
+                        Connect with <span class="gradient-text">Data Enthusiasts</span>
+                    </h2>
+                    
+                    <p class="community-subtitle">
+                        Join thousands of learners, professionals, and data enthusiasts in our exclusive WhatsApp community. Get updates, share insights, and grow together.
+                    </p>
+                    
+                    <div class="community-benefits">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h4>Latest Updates</h4>
+                            <p>Get notified about new cohorts, workshops, and events</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Network Building</h4>
+                            <p>Connect with peers and industry professionals</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Knowledge Sharing</h4>
+                            <p>Share tips, resources, and learning experiences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="community-cta">
+                        <a href="https://chat.whatsapp.com/F6bwb5whWAO2CnJQ6IJ1Ws?mode=gi_t" class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Join iPace Community Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Testimonials + Events -->
+                <div class="community-right">
+                    <div class="testimonials-header">
+                        <h3 class="testimonials-title">
+                            What They're <span class="gradient-text">Saying</span>
+                        </h3>
+                        <p class="testimonials-subtitle">Real feedback from our community members</p>
+                    </div>
+                    
+                    <div class="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="assets/images/gemini.jpg" alt="Sarah M." class="avatar-img">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "The community has been invaluable for my learning journey. I've connected with amazing professionals and gained insights I couldn't get anywhere else!"
+                                </p>
+                                <h4 class="testimonial-name">Sarah M.</h4>
+                                <span class="testimonial-role">Data Analyst</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="assets/images/image4.jpg" alt="David K." class="avatar-img">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Best decision I made was joining this community. The resources shared here are top-notch and the support is incredible!"
+                                </p>
+                                <h4 class="testimonial-name">David K.</h4>
+                                <span class="testimonial-role">ML Engineer</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="assets/images/image5.jpg" alt="Jennifer L." class="avatar-img">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "I've learned more from this community in 3 months than I did in 2 years of self-study. The networking opportunities are amazing!"
+                                </p>
+                                <h4 class="testimonial-name">Jennifer L.</h4>
+                                <span class="testimonial-role">Research Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-dots">
+                        <!-- Dots will be added by JavaScript -->
+                    </div>
+                    
+                    <!-- UPCOMING EVENT SECTION (ALIGNED) -->
+                    <div class="event-section" id="eventSection">
+                        <div class="event-header">
+                            <h4 class="event-title">
+                                Upcoming <span class="gradient-text">Community Event</span>
+                            </h4>
+                            <div class="event-status-toggle">
+                                <label class="status-switch">
+                                    <input type="checkbox" id="eventToggle" onchange="toggleEventStatus()">
+                                    <span class="status-slider"></span>
+                                    <span class="status-label">
+                                        <span class="status-text active">Event Active</span>
+                                        <span class="status-text inactive">No Event</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Event Available State -->
+                        <div class="event-card event-active" id="eventCard">
+                            <div class="event-date-box">
+                                <span class="event-day">25</span>
+                                <span class="event-month">APR</span>
+                                <span class="event-year">2026</span>
+                            </div>
+                            <div class="event-details">
+                                <h5 class="event-name">Data Analytics Masterclass</h5>
+                                <p class="event-time">
+                                    <i class="fas fa-clock"></i> 10:00 AM WAT
+                                </p>
+                                <p class="event-location">
+                                    <i class="fas fa-video"></i> Online (Zoom)
+                                </p>
+                            </div>
+                            <a href="#apply" class="event-cta-btn">
+                                Register Now
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- No Event State (Hidden by Default) -->
+                        <div class="event-card event-inactive" id="noEventCard" style="display: none;">
+                            <div class="no-event-icon">
+                                <i class="fas fa-calendar-times"></i>
+                            </div>
+                            <div class="no-event-content">
+                                <h5 class="no-event-title">No Upcoming Events</h5>
+                                <p class="no-event-text">
+                                    Check back later for new announcements
+                                </p>
+                                <button class="no-event-btn">
+                                    Notify Me
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section" id="apply">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">
+                    <span class="badge-icon"><i class="fas fa-rocket"></i></span>
+                    <span>Start Your Journey</span>
+                </div>
+                
+                <h2 class="cta-title">
+                    Start Your <span class="gradient-text">Data Journey</span>
+                </h2>
+                
+                <p class="cta-subtitle">
+                    Whether you are beginning your journey in analytics or expanding your professional capabilities, the iPace Data Academy provides the structured training needed to build meaningful data skills.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#programs" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i>
+                        Explore Programs
+                    </a>
+                    <a href="mailto:ipace2024@gmail.com" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                    <a href="https://wa.me/2348111986185" class="btn btn-outline btn-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        Apply Now
+                    </a>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Flexible scheduling</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certificate of completion</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Post-program support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Footer -->
+    <footer class="academy-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpg" alt="iPace Concepts" class="footer-logo-img">
+                        <span class="footer-logo-text">iPace <span class="accent">Concepts</span></span>
+                    </div>
+                    <p class="footer-text">
+                        The iPace Data Academy is an initiative of <strong>iPace Concepts</strong>, a data-focused organization dedicated to advancing data literacy, analytical thinking, and evidence-based decision-making.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/team">Team</a></li>
+                        <li><a href="/consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> ipace2024@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +2348111986185</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nigeria</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ipace24" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/ipace2024" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://medium.com/@ipace2024" target="_blank" aria-label="Medium">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ipaceconcepts" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2026 iPace Concepts. All rights reserved.</p>
+                <p>&copy; 2024 iPace Concepts. All rights reserved. | iPace Data Academy</p>
             </div>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/academy.js"></script>
 </body>
 </html>

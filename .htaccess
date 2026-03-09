@@ -1,0 +1,36 @@
+# ========================================
+# REMOVE .HTML EXTENSION
+# ========================================
+
+# Remove .html from URLs
+RewriteEngine On
+
+# Remove .html from URLs (e.g., academy.html → academy)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serve .html files without extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# ========================================
+# FORCE HTTPS
+# ========================================
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ========================================
+# REMOVE TRAILING SLASH FROM INDEX.HTML
+# ========================================
+
+# Redirect /index.html to /
+RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Serve index.html without showing it
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^index\.html$ / [L,R=301]
