@@ -2699,3 +2699,10 @@ body {
   border-left: 3px solid #D4AF37;
 }
 
+.video-element {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: matches modern UI styles */
+    display: block;
+}
+

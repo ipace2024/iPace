@@ -134,14 +134,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', highlightNav);
     
-    // ========================================
-    // VIDEO PLAY BUTTON (Placeholder)
-    // ========================================
+  // ========================================
+// VIDEO PLAY LOGIC
+// ========================================
     const videoPlaceholder = document.querySelector('.video-placeholder');
-    
-    if (videoPlaceholder) {
+    const videoElement = document.getElementById('academyVideo');
+
+    if (videoPlaceholder && videoElement) {
         videoPlaceholder.addEventListener('click', function() {
-            alert('Video player will open here. Add your YouTube/Vimeo embed code.');
+            // 1. Hide the placeholder UI
+            videoPlaceholder.style.display = 'none';
+            
+            // 2. Show the video element
+            videoElement.style.display = 'block';
+            
+            // 3. Start the video automatically
+            videoElement.play();
         });
     }
     
