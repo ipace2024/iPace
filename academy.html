@@ -198,6 +198,14 @@
                 Learning Approach
             </a>
         </li>
+
+        <!-- Add this menu item in both desktop and mobile menus -->
+        <li class="menu-item">
+            <a href="/academy/policy" class="menu-link">
+                <i class="fas fa-scroll"></i>
+                Policies
+            </a>
+        </li>
         
         <li class="menu-item">
             <a href="#tools" class="menu-link">
@@ -1100,6 +1108,142 @@
             </div>
         </div>
     </section>
+    <!-- ========================= -->
+<!-- COMPARE PLANS SECTION -->
+<!-- ========================= -->
+    <section class="plans-section">
+    <div class="container">
+        
+        <h1 class="section-title">Tuition Plans and FAQs</h1>
+        <p class="section-subtext">
+        Flexible learning. Structured payment. Start your journey with just ₦10,000.
+        </p>
+
+        <div class="plans-grid">
+
+        <!-- ADAP -->
+        <div class="plan-card featured">
+            <span class="badge">Most Popular</span>
+            <h1>ADAP</h1>
+            <h1>₦70,000</h1>
+            <p class="commitment">₦10,000 to get started</p>
+
+            <ul>
+            <li>✔ Data Cleaning & Analysis</li>
+            <li>✔ Visualization & Insights</li>
+            <li>✔ Hands-on Projects</li>
+            <li>✔ Certificate Included</li>
+            </ul>
+
+            <div class="payment-box">
+            <p><strong>Payment Flow:</strong></p>
+            <p>Join → Pay 70% (1st Month) → Complete before 2nd Assessment</p>
+            </div>
+
+            <button class="btn-primary">Apply Now</button>
+        </div>
+
+        <!-- RDAP -->
+        <div class="plan-card">
+            <h1>RDAP</h1>
+            <h1>₦65,000</h1>
+            <p class="commitment">₦10,000 to get started</p>
+
+            <ul>
+            <li>✔ Statistical Analysis</li>
+            <li>✔ Research Methods</li>
+            <li>✔ Survey Data Interpretation</li>
+            <li>✔ Certificate Included</li>
+            </ul>
+
+            <div class="payment-box">
+            <p><strong>Payment Flow:</strong></p>
+            <p>Join → Pay 70% (1st Month) → Complete before 2nd Assessment</p>
+            </div>
+
+            <button class="btn-primary">Apply Now</button>
+        </div>
+
+        <!-- MLDIP -->
+        <div class="plan-card">
+            <h1>MLDIP</h1>
+            <h1>₦80,000</h1>
+            <p class="commitment">₦10,000 to get started</p>
+
+            <ul>
+            <li>✔ Machine Learning Models</li>
+            <li>✔ Predictive Analytics</li>
+            <li>✔ Real-world Datasets</li>
+            <li>✔ Certificate Included</li>
+            </ul>
+
+            <div class="payment-box">
+            <p><strong>Payment Flow:</strong></p>
+            <p>Join → Pay 70% (1st Month) → Complete before 2nd Assessment</p>
+            </div>
+
+            <button class="btn-primary">Apply Now</button>
+        </div>
+
+        </div>
+
+        <!-- PAYMENT POLICY -->
+        <div class="policy-box">
+        <h3>Payment Guidelines</h3>
+        <p>
+            The ₦10,000 commitment fee secures your slot and grants immediate access to your learning cohort.
+            70% of tuition is expected within the first month, and full payment must be completed before the second assessment.
+        </p>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">When do classes start?</button>
+            <div class="faq-answer">
+            <p>Classes begin immediately after onboarding once you join your cohort group.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I pay in installments?</button>
+            <div class="faq-answer">
+            <p>Yes. You can start with ₦10,000 and complete your payments within the structured timeline.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Will I get a certificate?</button>
+            <div class="faq-answer">
+            <p>Yes, certificates are issued upon successful completion and full payment.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Are scholarships available?</button>
+            <div class="faq-answer">
+            <p>Yes. Limited scholarships and discounts are available based on eligibility.</p>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+
+    <!-- FAQ TOGGLE SCRIPT -->
+    <script>
+    const faqs = document.querySelectorAll(".faq-question");
+    faqs.forEach(btn => {
+        btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const answer = btn.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+    </script>
     <!-- CTA Section -->
     <section class="cta-section" id="apply">
         <div class="container">
