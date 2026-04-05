@@ -1212,17 +1212,47 @@ h1, h2, h3, h4, h5, h6 {
 .tools-note {
     text-align: center;
     margin-top: 3rem;
-    padding: 1.5rem;
-    background: rgba(198, 160, 0, 0.1);
-    border-radius: var(--border-radius);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2.5rem 2rem;
+    background: linear-gradient(135deg, 
+        rgba(255,255,255,0.98) 0%, 
+        rgba(255,248,220,0.95) 50%, 
+        rgba(255,235,160,0.92) 100%) !important;
+    border: 2px solid rgba(198,160,0,0.3) !important;
+    border-radius: 24px !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-shadow: 
+        0 20px 50px rgba(198,160,0,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    color: #333 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+}
+
+.tools-note::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #C6A000, #D4AF37, #C6A000);
+    border-radius: 26px;
+    z-index: -1;
+    padding: 2px;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
 }
 
 .tools-note i {
-    color: var(--primary-color);
-    margin-right: 0.5rem;
+    color: #C6A000 !important;
+    font-size: 1.8rem !important;
+    margin-right: 1rem !important;
+    text-shadow: 0 2px 8px rgba(198,160,0,0.4) !important;
 }
 
 /* ========================================
